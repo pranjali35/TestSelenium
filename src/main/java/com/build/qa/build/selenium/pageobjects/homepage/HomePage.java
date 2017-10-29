@@ -72,7 +72,7 @@ public class HomePage extends BasePage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[1]/div[1]/div[1]/div/div[5]/div[2]/div[4]/ul/li[2]/div[2]/a/div[1]/img")));
 		driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[1]/div[1]/div/div[5]/div[2]/div[4]/ul/li[2]/div[2]/a/div[2]/span")).click();
 		jse.executeScript("window.scrollBy(0,350)", "");	
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		driver.findElement(By.xpath(".//*[@id='configure-product-wrap']/button")).click();     
 		return wait.until(ExpectedConditions.presenceOfElementLocated(product)) != null;
 
@@ -98,7 +98,7 @@ public class HomePage extends BasePage {
 		//		Thread.sleep(2000);
 		driver.findElement(By.xpath(".//*[@id='header']/section[2]/div/div/div/a[2]/button")).click();
 		jse.executeScript("window.scrollBy(0,250)", "");
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		driver.findElement(By.xpath(".//*[@id='page-content']/div[1]/div[1]/div/section[2]/div/div[1]/table/tbody/tr[2]/td/button[1]")).click();
 		Thread.sleep(2000);
 		driver.switchTo().activeElement();
